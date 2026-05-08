@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <!-- Header -->
+  <header id="header"
+    class="header d-flex align-items-center light-background sticky-top">
+
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <nav id="navmenu" class="navmenu">
+
+        <ul>
+
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+
+    <section id="portfolio-details"
+      class="portfolio-details section">
+
+      <!-- Section Title -->
+      <div class="container section-title"
+        data-aos="fade-up">
+
+        <h2 id="project-title">
+          Loading Project...
+        </h2>
+
+        <p id="project-description">
+          Please wait while the project loads.
+        </p>
+
+      </div>
+
+      <div class="container"
+        data-aos="fade-up"
+        data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <!-- LEFT SIDE -->
+          <div class="col-lg-6">
+
+            <img id="project-image"
+              src="assets/img/portfolio/python.jpg"
+              class="img-fluid rounded shadow"
+              alt="Project Image">
+
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="col-lg-6">
+
+            <div class="portfolio-details-content">
+
+              <h2 class="project-title"
+                id="project-heading">
+
+                Project Name
+
+              </h2>
+
+              <!-- OVERVIEW -->
+              <div class="project-overview mt-4">
+
+                <p class="lead"
+                  id="project-overview">
+
+                  Project overview will appear here.
+
+                </p>
+
+              </div>
+
+              <!-- FEATURES -->
+              <div class="project-features mt-4">
+
+                <h3>
+                  <i class="bi bi-stars"></i>
+                  Key Features
+                </h3>
+
+                <ul id="project-features-list"
+                  class="list-unstyled mt-3">
+
+                </ul>
+
+              </div>
+
+              <!-- BUTTONS -->
+              <div class="cta-buttons mt-4">
+
+                <a id="github-link"
+                  href="#"
+                  target="_blank"
+                  class="btn btn-primary">
+
+                  <i class="bi bi-github"></i>
+                  View GitHub Repository
+
+                </a>
+
+                <a href="portfolio.html"
+                  class="btn btn-secondary ms-2">
+
+                  Back To Portfolio
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+
+      <div class="copyright text-center">
+
+        <p>
+
+          © <span>Copyright</span>
+
+          <strong class="px-1 sitename">
+            FolioOne
+          </strong>
+
+          <span>All Rights Reserved</span>
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Dynamic Project Script -->
+  <script>
+
+    // Initialize animations
+    AOS.init();
+
+    // Read URL parameter
+    const params = new URLSearchParams(window.location.search);
+
+    const project = params.get("project");
+
+    console.log("Project from URL:", project);
+
+    // Project database
+    const projects = {
+
+      "student-registration-number": {
+
+        title: "Student Registration Number",
+
+        description:
+          "Python project for generating and validating student registration numbers.",
+
+        image:
+          "assets/img/portfolio/python.jpg",
+
+        features: [
+          "Python Automation",
+          "Registration Validation",
+          "Data Processing"
+        ],
+
+        github:
+          "https://github.com/angelahgaolatlhe/group2_python_programming_project"
+      },
+
+      "air-quality-analysis": {
+
+        title: "Air Quality Analysis",
+
+        description:
+          "Machine learning project for analyzing air pollution data.",
+
+        image:
+          "assets/img/portfolio/ML.jpg",
+
+        features: [
+          "Machine Learning",
+          "Data Visualization",
+          "Prediction Models"
+        ],
+
+        github:
+          "https://github.com/angelahgaolatlhe/gaolatlhe.a.kgato_machine_learning_repository-/tree/main/Project"
+      },
+
+      "phone-usage-analysis": {
+
+        title: "Phone Usage Analysis",
+
+        description:
+          "High dimensional data analysis project using phone usage datasets.",
+
+        image:
+          "assets/img/portfolio/HDDA.jpg",
+
+        features: [
+          "Statistical Analysis",
+          "Pattern Detection",
+          "Data Analytics"
+        ],
+
+        github:
+          "https://github.com/angelahgaolatlhe/gaolatlhe.a.kgato_HDDA_repository-/tree/main/Project"
+      },
+
+      "digital-transformation": {
+
+        title: "Digital Transformation",
+
+        description:
+          "Deep learning project focused on digital transformation solutions.",
+
+        image:
+          "assets/img/portfolio/Deeplearning.png",
+
+        features: [
+          "Deep Learning",
+          "CNN Models",
+          "RNN Networks"
+        ],
+
+        github:
+          "https://github.com/angelahgaolatlhe/DeepLearningCompetition"
+      },
+
+      "computer-vision": {
+
+        title: "Computer Vision",
+
+        description:
+          "Computer vision project using image recognition and AI.",
+
+        image:
+          "assets/img/portfolio/computer-vision-banner.png",
+
+        features: [
+          "Image Recognition",
+          "Object Detection",
+          "AI Vision"
+        ],
+
+        github:
+          "https://github.com/angelahgaolatlhe/computer-vision"
+      },
+
+      "html-project": {
+
+        title: "HTML Web Development",
+
+        description:
+          "Responsive web development project using HTML, CSS and Bootstrap.",
+
+        image:
+          "assets/img/portfolio/webdev.jpg",
+
+        features: [
+          "Responsive Design",
+          "Bootstrap",
+          "Frontend Development"
+        ],
+
+        github:
+          "https://github.com/angelahgaolatlhe/html-project"
+      }
+
+    };
+
+    // Find selected project
+    const selectedProject = projects[project];
+
+    console.log("Selected project:", selectedProject);
+
+    // If project exists
+    if (selectedProject) {
+
+      // Set page title
+      document.title =
+        selectedProject.title;
+
+      // Update text
+      document.getElementById("project-title").innerText =
+        selectedProject.title;
+
+      document.getElementById("project-heading").innerText =
+        selectedProject.title;
+
+      document.getElementById("project-description").innerText =
+        selectedProject.description;
+
+      document.getElementById("project-overview").innerText =
+        selectedProject.description;
+
+      // Update image
+      document.getElementById("project-image").src =
+        selectedProject.image;
+
+      // Update GitHub link
+      document.getElementById("github-link").href =
+        selectedProject.github;
+
+      // Add features
+      const featuresList =
+        document.getElementById("project-features-list");
+
+      // Clear existing features
+      featuresList.innerHTML = "";
+
+      selectedProject.features.forEach(feature => {
+
+        const li = document.createElement("li");
+
+        li.classList.add("mb-2");
+
+        li.innerHTML =
+          `<i class="bi bi-check2-circle text-primary"></i> ${feature}`;
+
+        featuresList.appendChild(li);
+
+      });
+
+    } else {
+
+      // Show error if project not found
+      document.getElementById("project-title").innerText =
+        "Project Not Found";
+
+      document.getElementById("project-heading").innerText =
+        "Project Not Found";
+
+      document.getElementById("project-description").innerText =
+        "The requested project does not exist.";
+
+      document.getElementById("project-overview").innerText =
+        "Please return to the portfolio page and select a valid project.";
+
+      console.error("Project not found:", project);
+
+    }
+
+  </script>
+
+</body>
+
+</html>
