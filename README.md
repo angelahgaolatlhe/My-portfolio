@@ -18,7 +18,7 @@ This document describes all changes made to the original **FolioOne Bootstrap Te
 
 ## Overview
 
-The original FolioOne template was a generic Bootstrap 5 portfolio with placeholder content (lorem ipsum text, dummy names, fake stats, and unrelated skill categories). All pages have been fully rewritten with real, accurate content sourced from Angelah's CV. Sections that were not applicable (e.g. testimonials, fake stats, unrelated dropdowns) were removed. New sections were added where the template had gaps.
+The original FolioOne template was a generic Bootstrap 5 portfolio with placeholder content (lorem ipsum text, dummy names, fake stats, and unrelated skill categories). All pages have been fully rewritten with my real, accurate content. Sections that were not applicable (e.g. testimonials, fake stats, unrelated dropdowns) were removed. New sections were added where the template had gaps.
 
 ---
 
@@ -30,7 +30,7 @@ The original hero section was kept as the structural base but substantially rewo
 | Element | Original | Updated |
 |---|---|---|
 | Page title | "Index - FolioOne Bootstrap Template" | "Angelah Kgato Gaolatlhe - Portfolio" |
-| Hero heading | Generic placeholder name | "Hello, I'm Angelah Kgato Gaolatlhe" |
+| Hero heading | Generic placeholder name | "Hello, I am Angelah Kgato Gaolatlhe" |
 | Subheading | Typed animation with unrelated items | "Big Data & Data Science \| MSc Student at AIMS Senegal" |
 | Bio paragraph | Long summary paragraph included | **Removed** — kept the page clean and minimal |
 | Profile photo shape | Small circular image (300×300px) | Large rounded rectangle (520×560px) |
@@ -53,11 +53,11 @@ The original hero section was kept as the structural base but substantially rewo
 ## about.html — About Page
 
 ### What was removed from the original
-- **Fake skills grid** (UI/UX, React.js, Mobile-first, Photography) — unrelated to Angelah
-- **Fake journey timeline** (2018 B.A. in Design, 2020 Freelance, etc.) — entirely fictional
-- **Skills section** with HTML/CSS/JavaScript/Photoshop progress bars — not applicable
-- **Stats section** with avatar images and counters (185+, 32K, 128+) — fictional numbers
-- **Testimonials section** (Saul Goodman, Sara Wilsson, etc.) — placeholder people
+- **Fake skills grid** (UI/UX, React.js, Mobile-first, Photography) 
+- **Fake journey timeline** (2018 B.A. in Design, 2020 Freelance, etc.) 
+- **Skills section** with HTML/CSS/JavaScript/Photoshop progress bars 
+- **Stats section** with avatar images and counters (185+, 32K, 128+) 
+- **Testimonials section** (Saul Goodman, Sara Wilsson, etc.) 
 
 ### What was added
 
@@ -67,7 +67,6 @@ The original hero section was kept as the structural base but substantially rewo
 - CTA buttons: "See My Projects" → `portfolio.html` and "View Full Resume" → `resume.html`
 
 #### 3. Areas of Deep Interest (6 cards)
-Content sourced directly from the **Interests** line of the CV:
 - Data Analysis & Visualisation
 - Informed Machine Learning
 - Neural Networks
