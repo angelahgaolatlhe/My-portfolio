@@ -293,6 +293,27 @@ This makes the page faster to load and easier to maintain. The Swiper carousel a
 
 ---
 
+## Contact Page (`contact.html`)
+
+The contact page provides visitors with ways to reach out directly.
+
+### Layout
+- **Left column** – Contact info panel with location, email, LinkedIn, and GitHub.
+- **Right column** – Contact form with fields for name, email, subject, and message.
+
+### Contact Details
+| Field    | Value                                      |
+|----------|--------------------------------------------|
+| Location | Km2 route de Joal (Centre IRD), Mbour-Thies, Senegal |
+| Email    | angelahkgatogaolatlhe@gmail.com            |
+| LinkedIn | linkedin.com/in/angelah-kgato-gaolatlhe    |
+| GitHub   | github.com/angelahgaolatlhe                |
+
+### Contact Form
+The form is powered by [Formspree](https://formspree.io) and submits via AJAX, keeping the user on the page with inline success/error feedback.
+
+---
+
 ## Global Changes (All Pages)
 
 | Change | Detail |
