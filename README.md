@@ -12,7 +12,8 @@ This document describes all changes made to the original **FolioOne Bootstrap Te
 4. [resume.html — Resume Page](#resumehtml--resume-page)
 5. [services.html — Skills Page](#serviceshtml--skills-page)
 6. [service-details.html — Skill Details Page](#service-detailshtml--skill-details-page)
-7. [Global Changes (All Pages)](#global-changes-all-pages)
+7. [portfolio-details.html — Project Details Page](#portfolio-details.html--project--details--page)
+8. [Global Changes (All Pages)](#global-changes-all-pages)
 
 ---
 
@@ -195,17 +196,80 @@ The original sidebar had a fake client testimonial (Michael Chen, TechCorp) and 
 
 ---
 
+## portfolio.html — Portfolio Page
+
+### What was changed
+
+The original portfolio section displayed static project cards with placeholder links that did not open any meaningful content. The page was redesigned to function as an interactive project gallery.
+
+### Key updates
+
+| Change                   | Description                                                                                    |
+| ------------------------ | ---------------------------------------------------------------------------------------------- |
+| Clickable project cards  | Each portfolio project can now be clicked to open a dedicated project details page             |
+| Dynamic project routing  | Every project now passes a unique project identifier through the URL                           |
+| Real project integration | Portfolio entries were updated with Angelah Kgato Gaolatlhe's actual projects and repositories |
+| Improved navigation      | Users can smoothly move between the portfolio overview and individual project pages            |
+| GitHub integration       | Projects are now connected to their corresponding GitHub repositories                          |
+
+### Projects added
+
+The following real projects were integrated into the portfolio:
+
+* Student Registration Number
+* Air Quality Analysis
+* Phone Usage Analysis
+* Digital Transformation
+* Computer Vision
+* HTML Web Development
+
+### Result
+
+The portfolio page now behaves like a professional project showcase rather than a static image gallery.
+
+---
+
+## portfolio-details.html — Project Details Page
+
+### What was changed
+
+The original `portfolio-details.html` page contained generic placeholder content unrelated to Angelah's work. It was completely redesigned into a reusable dynamic project page.
+
+Instead of creating separate HTML pages for each project, one page now dynamically loads content depending on the selected project.
+
+### Key updates
+
+| Change                    | Description                                                                                                      |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Dynamic content loading   | The page automatically displays different content depending on the selected project                              |
+| Real project descriptions | Placeholder text was replaced with real project summaries and explanations                                       |
+| GitHub repository buttons | Every project includes a direct link to its GitHub repository                                                    |
+| Project feature lists     | Each project now displays its own tools, technologies, and highlights                                            |
+| Dynamic project images    | Project banners/images change automatically based on the selected project                                        |
+| Error handling            | Invalid or missing project links now display a user-friendly "Project Not Found" message instead of a blank page |
+| Improved user experience  | Navigation back to the portfolio page was added for easier browsing                                              |
+
+### Result
+
+The page now functions as a central reusable project-details system that supports multiple projects while keeping the website clean, scalable, and easier to maintain.
+
+---
+
 ## Global Changes (All Pages)
 
 | Change | Detail |
 |---|---|
-| **Nav dropdown removed** | The "Dropdown" menu item with five dummy sub-links was removed from all pages — it served no purpose |
-| **"Skills" nav link** | All pages updated so the Skills nav item points to `services.html` (not the non-existent `skills.html`) |
-| **LinkedIn link** | Updated from `href="#"` to `https://www.linkedin.com/in/angelah-kgato-gaolatlhe` in both the header social links and footer on all modified pages |
-| **GitHub link** | Added to relevant pages pointing to `https://github.com/angelahgaolatlhe` |
-| **Email link** | Added `mailto:angelahkgatogaolatlhe@gmail.com` where social icons appear |
-| **Page titles** | Updated from "FolioOne Bootstrap Template" to descriptive titles per page |
-| **Template comments** | Original BootstrapMade license comments preserved as required |
+| **Nav dropdown removed**       | The "Dropdown" menu item with five dummy sub-links was removed from all pages — it served no purpose |
+| **"Skills" nav link**          | All pages updated so the Skills nav item points to `services.html` (not the non-existent `skills.html`) |
+| **LinkedIn link**              | Updated from `href="#"` to `https://www.linkedin.com/in/angelah-kgato-gaolatlhe` in both the header social links and footer on all modified pages |
+| **GitHub link**                | Added to relevant pages pointing to `https://github.com/angelahgaolatlhe` |
+| **Email link**                 | Added `mailto:angelahkgatogaolatlhe@gmail.com` where social icons appear |
+| **Page titles**                | Updated from "FolioOne Bootstrap Template" to descriptive titles per page |
+| **Template comments**          | Original BootstrapMade license comments preserved as required |
+| **Portfolio system modernised**    | The website now supports dynamic project rendering instead of relying on multiple static pages        |
+| **Cleaner project management**     | New projects can easily be added without creating additional HTML files                               |
+| **More professional presentation** | The portfolio now provides structured project descriptions, technologies used, and repository access  |
+| **Better usability**              | Users can explore projects more intuitively with improved navigation and clearer project organisation |
 
 ---
 
