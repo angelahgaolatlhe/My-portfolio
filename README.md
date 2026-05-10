@@ -2,6 +2,8 @@
 
 This document describes all changes made to the original **FolioOne Bootstrap Template** to personalise it as Angelah Kgato Gaolatlhe's professional data science portfolio.
 
+The original template can be found at https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/ and the personalised version at https://angelahgaolatlhe.github.io/My-portfolio/
+
 ---
 
 ## Table of Contents
