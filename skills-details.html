@@ -586,6 +586,44 @@
         { label: "Concepts", value: "Web architecture, client-server, web IHM" }
       ],
       related: ["Database Systems", "Data Collection", "Machine Learning Deployment", "NLP", "Deep Learning"]
+    },
+
+    // ─────────────────────────────────────────────
+    // 8. APPLIED GENERATIVE AGENTIC AI
+    // ─────────────────────────────────────────────
+    "generative-agentic-ai": {
+      category: "Artificial Intelligence",
+      readTime: "6 min read",
+      title: "Applied Generative Agentic AI",
+      description: "Moving from static text completion chatbots to dynamic autonomous agents that construct workflows, reason, call external APIs, and coordinate as a team.",
+      narrativeHeading: "Transitioning From Chatbots to Autonomous Systems",
+      narrativeBody: "The Applied Generative Agentic AI course [cite: 1012, 1031] represents the cutting edge of AI development. Starting from fundamental transformer mechanics [cite: 1024] and Byte-Pair Encoding (BPE) [cite: 1024, 1064], the course progressed through prompting best-practices [cite: 754, 755], Retrieval-Augmented Generation (RAG) pipelines [cite: 754, 959], and lightweight fine-tuning (LoRA/QLoRA)[cite: 959, 1024]. The final block centered on designing structured agentic patterns [cite: 822] and multi-agent systems via LangGraph [cite: 857, 959], delivering production-ready applications suited for low-resource constraints[cite: 719].",
+      benefits: [
+        { icon: "bi-cpu", title: "Transformer & Pipeline Mechanics", body: "Mastering self-attention mechanics, the sub-word tokenization lifecycle (BPE), and the three-stage LLM pipeline (pre-training, instruction-tuning, and alignment/RLHF)[cite: 684, 1024]." },
+        { icon: "bi-lightning", title: "Advanced Prompting & Synthesis", body: "Developing complex execution trees using Few-Shot, Chain-of-Thought (CoT), Self-Instruct dataset synthesis, and LLM teacher distillation techniques[cite: 755, 789]." },
+        { icon: "bi-search", title: "Intelligent Retrieval (RAG)", body: "Setting up document parsing pipelines and integrating vector databases (ChromaDB) to inject updated corporate knowledge, reducing semantic hallucination risks[cite: 754, 959]." },
+        { icon: "bi-diagram-3", title: "Agentic Patterns (ReAct & Workflows)", body: "Deploying Reasoning-Action (ReAct) chains using tools and planning patterns, modeling states, and implementing multi-agent hierarchies using LangGraph[cite: 822, 857, 891, 1024]." },
+        { icon: "bi-phone", title: "Frugal AI & Local Deployments", body: "Quantizing models to run efficiently locally (using LiteRT-LM and Unsloth), preparing applications designed for restricted compute scenarios common in Africa[cite: 719, 720, 959]." }
+      ],
+      timeline: [
+        { step: "1", heading: "Neurons to Transformers", detail: "Building conceptual models of self-attention matrices, tokenizers, and loader tools on Hugging Face[cite: 613, 650, 959].", time: "Module 0" },
+        { step: "2", heading: "The Modern LLM Engine", detail: "Deconstructing pre-training, SFT, alignment, and comparing decoder-only vs encoder-decoder structures[cite: 648, 684, 686].", time: "Module 1" },
+        { step: "3", heading: "Prompting, RAG & Fine-Tuning", detail: "Applying vector indexes (ChromaDB), optimizing contexts, and configuring low-memory LoRA adapters with Unsloth[cite: 959].", time: "Module 2" },
+        { step: "4", heading: "Autonomous Agents & LangGraph", detail: "Mapping routing rules, conditional graph edges, and modeling supervisor-specialist multi-agent networks[cite: 857, 891].", time: "Module 3" },
+        { step: "5", heading: "Local Constraints & Deployment", detail: "Optimizing weights using bitsandbytes, and building interfaces for production triage systems[cite: 938, 959].", time: "Module 4" }
+      ],
+      stats: [
+        { number: "30h", label: "Syllabus Load [cite: 1034]" },
+        { number: "Agentic", label: "LangGraph Focus [cite: 857]" },
+        { number: "Frugal AI", label: "Low-Resource Focus [cite: 719]" }
+      ],
+      details: [
+        { label: "Core Libraries", value: "Hugging Face, LangGraph, Unsloth, ChromaDB [cite: 959]" },
+        { label: "Agent Frameworks", value: "ReAct patterns, Supervisor/Orchestrator, LangChain [cite: 891, 959, 1024]" },
+        { label: "Model Optimization", value: "QLoRA fine-tuning, BitsAndBytes quantization [cite: 959, 1024]" },
+        { label: "Applied In", value: "Thesis stroke triage model & AI4SENSE [cite: 938]" }
+      ],
+      related: ["Deep Learning", "Natural Language Processing", "Computer Vision", "Machine Learning"]
     }
 
   }; // end services object
@@ -649,10 +687,11 @@
     ).join("");
   }
 
+  // Unified fallback search check: matches both "skill" and "service" parameters
   const params = new URLSearchParams(window.location.search);
-  const serviceKey = params.get("service") || "data-preprocessing";
+  const serviceKey = params.get("skill") || params.get("service") || "generative-agentic-ai";
   renderService(serviceKey);
-  </script>
+</script>
 
 </body>
 </html>
